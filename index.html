@@ -1,232 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>F1 WORLD</title>
-        <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="estilos_maquetacion.css">
-
-<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+<link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
+  <!-- Contenedor del formulario -->
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="post" id="formularioLogin">
+      <!-- Campo de usuario -->
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required />
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <!-- COLOCA TU LOGO AQUÍ -->
-                <a href="index.html">
-                    <img src="img/F1.logo.png"  alt="Coloca tu logo aquí">
-                </a>
-            </div>
+      <!-- Campo de contraseña -->
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena" required />
 
-            <nav>
-                <ul class="nav-menu">
-                     <li><a href="index.html"><i class="fi fi-bs-home"></i>Inicio</a></li>
-                    
-                    <li class="dropdown">
-                        <a href="#"><i class="fi fi-bs-menu-burger"></i>Escuderías ▾</a>
-                        <ul class="dropdown-content">
-                            <li><a href="https://www.redbullracing.com/int-en">Red Bull</a></li>
-                            <li><a href="https://www.ferrari.com/en-EN/formula1">Ferrari</a></li>
-                            <li><a href="https://www.mercedesamgf1.com/">Mercedes</a></li>
-                            <li><a href="https://www.mclaren.com/racing/formula-1/">McLaren</a></li>
-                            <li><a href="https://www.astonmartinf1.com/en-GB">Aston Martin</a></li>
-                            <li><a href="https://www.alpinef1.com/">Alpine</a></li>
-                            <li><a href="https://www.williamsf1.com/?srsltid=AfmBOortncWjQwE2x_SS0R3edSoBrNHxu8uPcXnTdXS0uY3mhGt6_gmY">Williams</a></li>
-                            <li><a href="https://www.haasf1team.com/">Haas</a></li>
-                            <li><a href="https://www.visacashapprb.com/int-en">Visa</a></li>
-                            <li><a href="https://www.audif1.com/en">Audi</a></li>
-                            <li><a href="https://www.cadillacf1team.com/">Cadillac</a></li>
-                        </ul>
-                    </li>
-                   
+      <!-- Botón de envío -->
+      <input type="submit" value="Entrar" />
+    </form>
 
-                    <li><a href="https://lat.motorsport.com/f1/drivers/">Pilotos</a></li>
-                    <li><a href="https://f1store4.formula1.com/es/" target="_blank">Merch</a></li>
-                    <li><a href="login/index.html" class="btn-login">Login</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Banner Principal -->
-<div class="swiper mainBanner">
-    <div class="swiper-wrapper"> 
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-            <a href="#" class="banner-link">
-                <img src="banner/LA VELOCIDAD COMIENZA AQUÍ.png" alt="Oferta 1">
-                <div class="banner-content">
-                    <div class="text-box">
-                        <h1>F1 EVOLUTION</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-            <a href="#" class="banner-link">
-                <img src="banner/TEMPORADA ACTUAL.png" alt="Oferta 2">
-                <div class="banner-content">
-                    <div class="text-box">
-                        <h1>TEMPORADA ACTUAL</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-             <a href="#" class="banner-link">
-                 <img src="banner/PILOTOS.png" alt="Oferta 2">
-                <div class="banner-content">
-                    <div class="text-box">
-                        <h1>PILOTOS</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-     <!-- Slide 4 -->
-        <div class="swiper-slide">
-            <a href="#" class="banner-link">
-                <img src="banner/ESCUDERIAS.png" alt="Oferta 1">
-                <div class="banner-content">
-                    <div class="text-box">
-                        <h1>ESCUDERÍAS</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-         <!-- Slide 5-->
-        <div class="swiper-slide">
-            <a href="#" class="banner-link">
-                <img src="banner/PREMIOS.png" alt="Oferta 1">
-                <div class="banner-content">
-                    <div class="text-box">
-                        <h1>GRANDES PREMIOS</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-         <!-- Slide 6 -->
-        <div class="swiper-slide">
-             <a href="#" class="banner-link">
-                <img src="banner/RIVALIDADES.png" alt="Oferta 1">
-                <div class="banner-content">
-                    <div class="text-box">
-                        <h1>RIVALIDADES</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-
+    <!-- Enlaces adicionales -->
+    <div class="extra">
+      <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+      <p><a href="#">Crear cuenta nueva</a></p>
     </div>
-    <!-- Controles -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-</div>
-
-    <main class="container" style="padding: 100px 0;">
-        <h1 style="font-size: 3rem; margin-bottom: 20px;">FÓRMULA 1</h1>
-        <p style="font-size: 1.2rem; max-width: 600px;">La FÓRMULA 1, también conocida como F1, es la competencia de automovilismo más importante y prestigiosa del mundo. En ella participan los mejores pilotos y las escuderías más avanzadas, compitiendo en circuitos internacionales llenos de velocidad, estrategia y tecnología. </p>
-        <p style="font-size: 1.2rem; max-width: 600px;">La F1 no solo representa competencia, sino también pasión, adrenalina y una historia llena de leyendas que han marcado el deporte motor.</p>
-        <section class="seccion-info">
-            
-            <!-- FILA DE 2 CUADROS (Noticias Destacadas) -->
-            <h2 class="titulo-seccion">CARRERAS</h2>
-            <div class="contenedor-dos">
-                <div class="cuadro cuadro-grande">
-                    <div class="imagen-placeholder"><img src="img/FOTO1.png"></div>
-                    <h3>Funcionamiento de una carrera</h3>
-                    <p>Una carrera de Fórmula 1 es una competencia donde varios pilotos recorren un circuito a máxima velocidad con el objetivo de cruzar primero la meta. Cada carrera forma parte del campeonato mundial y otorga puntos según la posición final de cada piloto.
-
-Antes de iniciar la carrera, los pilotos participan en una sesión de clasificación que define el orden de salida en la parrilla. El piloto más rápido obtiene la “pole position”, es decir, el primer lugar de salida.</p>
-                    <a href="https://www.sportingnews.com/mx/formula-1/news/guia-de-la-formula-1-para-principiantes-sistema-puntuacion-sprint-salarios-paradas-boxes-mas/jbf1nmywxgn4rxbwcn4htakp" class="leer-mas">Leer más</a>
-                </div>
-                <div class="cuadro cuadro-grande">
-                    <div class="imagen-placeholder"><img src="img/FOTO2.jpg"></div>
-                    <h3>¿Qué hace especial a la Fórmula 1?</h3>
-                    <p>La Fórmula 1 es considerada la máxima categoría del automovilismo porque combina velocidad extrema, tecnología avanzada y competencia al más alto nivel. Cada carrera reúne a los mejores pilotos y a escuderías que desarrollan monoplazas diseñados con ingeniería de precisión para alcanzar el máximo rendimiento.
-Uno de los aspectos que hace especial a la F1 es la velocidad que pueden alcanzar los autos, superando los 350 km/h en algunos circuitos. Además, cada detalle influye en el resultado.</p>
-                    
-                    <a href="https://www.mexicogp.mx/noticia/formula-1-los-atributos-que-hacen-al-piloto-perfecto/" class="leer-mas">Leer más</a>
-                </div>
-            </div>
-
-            <!-- FILA DE 3 CUADROS (Eventos o Info Rápida) -->
-            <h2 class="titulo-seccion">NOTICIAS</h2>
-            <div class="contenedor-tres">
-    <!-- Cuadro con Imagen -->
-    <div class="cuadro cuadro-pequeno">
-        <div class="media-container">
-        <img src="img/FOTO3.jpg">
-        </div>
-        <h4>Dominio en el Gran Premio</h4>
-        <p>Los Grandes Premios reúnen a los mejores pilotos del mundo en circuitos llenos de velocidad y estrategia. Después de cada carrera, esta sección puede mostrar al ganador, las posiciones finales y los momentos más importantes ocurridos en la pista.</p>
-    </div>
-
-    <!-- Cuadro con Video -->
-    <div class="cuadro cuadro-pequeno">
-        <div class="media-container">
-            <video controls>
-                <source src="video/videoplayback1.mp4" type="video/mp4">
-                Tu navegador no soporta videos.
-            </video>
-        </div>
-        <h4>La lucha por dominar la pista</h4>
-        <p>Las rivalidades entre pilotos y escuderías son uno de los elementos más emocionantes de la Fórmula 1. En cada temporada, los competidores buscan superar a sus oponentes en velocidad, estrategia y consistencia para conseguir el campeonato mundial.</p>
-    </div>
-
-    <!-- Cuadro con Info Rápida (Solo texto si quieres) -->
-    <div class="cuadro cuadro-pequeno">
-        <div class="media-container">
-            <img src="img/FOTO4.jpg" alt="Evento">
-        </div>
-        <h4>El siguiente desafío del campeonato</h4>
-        <p>Cada circuito representa un nuevo reto para los pilotos y equipos. Aquí se puede mostrar información sobre el próximo Gran Premio y sus características principales.</p>
-    </div>
-</div>
-</section> 
-        
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <p>✕ @F1</p>
-                    <p>✉️ media@formula1.com</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Ubicación</h4>
-                    <p>Formula One Management</p>
-                    <p>London, United Kingdom</p>
-                    <a href="https://www.google.com/maps/place/Londres,+Reino+Unido/">Ver en Google Maps</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="https://www.formula1.com/en/racing/2026.html" target="_blank">Temporada Actual </a></li>
-                        <li><a href="https://www.formula1.com/en/racing/2026.html" target="_blank">Calendario Oficial</a></li>
-                        <li><a href="https://www.formula1.com/" target="_blank">Regresar</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2026 Camila Cruz Cordova."3A" Todos los derechos reservados.
-            </div>
-        </div>
-    </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="banner.js"></script>
+  </div>
+  <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
